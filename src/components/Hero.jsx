@@ -23,7 +23,7 @@ const Hero = () => {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.2, duration: 0.8 }}
                     >
-                        Hello, I'm <span className="highlight">JsnNb</span>
+                        Olá, eu sou <span className="highlight">Jefferson</span>
                     </motion.h2>
 
                     <motion.h1
