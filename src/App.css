@@ -1,0 +1,7 @@
+/* Basic App layout */
+.app-container {
+  width: 100%;
+  /* Removed max-width and margins to allow full-width design */
+  margin: 0;
+  padding: 0;
+}
