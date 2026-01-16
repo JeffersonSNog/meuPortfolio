@@ -1,7 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import './About.css';
 
 const About = () => {
+    const { t } = useTranslation();
+
     return (
         <section id="about" className="about-section">
             <div className="about-container">
@@ -12,7 +15,7 @@ const About = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <h2 className="section-title">About Me</h2>
+                    <h2 className="section-title">{t('about.title')}</h2>
                     <div className="section-line"></div>
                 </motion.div>
 
@@ -24,19 +27,14 @@ const About = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <p>
-                            I am a technology enthusiast driven by scientific curiosity and a relentless desire to solve complex problems.
-                            My journey is defined by a deep focus on innovation and continuous learning, exploring the frontiers of what's possible with code and data.
-                        </p>
-                        <p>
-                            From architecting scalable software to training neural networks, I believe in the power of technology to improve lives and shape the future.
-                            I approach every challenge with a strategic mindset, blending creativity with engineering precision.
-                        </p>
+                        <p>{t('about.p1')}</p>
+                        <p>{t('about.p2')}</p>
+                        <p>{t('about.p3')}</p>
                         <div className="about-tags">
-                            <span>Innovation</span>
-                            <span>Problem Solving</span>
-                            <span>Continuous Learning</span>
-                            <span>Future Tech</span>
+                            <span>{t('about.tag_innovation')}</span>
+                            <span>{t('about.tag_problem_solving')}</span>
+                            <span>{t('about.tag_learning')}</span>
+                            <span>{t('about.tag_future')}</span>
                         </div>
                     </motion.div>
 

@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Mail, Github, Linkedin, Send } from 'lucide-react';
 import './Contact.css';
 
 const Contact = () => {
+    const { t } = useTranslation();
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -16,8 +18,11 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Form submitted:', formData);
-        alert('Thank you for your message! This is a demo form.');
+        const { name, email, message } = formData;
+        const subject = `Portfolio Contact from ${name}`;
+        const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage:%0D%0A${message}`;
+        window.location.href = `mailto:jeffersonsnpro@outlook.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+        alert(t('contact.alert_success'));
     };
 
     return (
@@ -30,7 +35,7 @@ const Contact = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <h2 className="section-title">Get In Touch</h2>
+                    <h2 className="section-title">{t('contact.title')}</h2>
                     <div className="section-line"></div>
                 </motion.div>
 
@@ -42,23 +47,21 @@ const Contact = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h3>Let's Connect</h3>
-                        <p>
-                            I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
-                        </p>
+                        <h3>{t('contact.connect_title')}</h3>
+                        <p>{t('contact.connect_desc')}</p>
 
                         <div className="contact-links">
-                            <a href="#" className="contact-link">
+                            <a href="mailto:jeffersonsnpro@outlook.com" className="contact-link">
                                 <Mail size={24} />
-                                <span>hello@jsnnb.dev</span>
+                                <span>jeffersonsnpro@outlook.com</span>
                             </a>
-                            <a href="#" className="contact-link">
+                            <a href="https://github.com/JeffersonSNog" className="contact-link" target="_blank" rel="noopener noreferrer">
                                 <Github size={24} />
-                                <span>github.com/JsnNb</span>
+                                <span>github.com/JeffersonSNog</span>
                             </a>
-                            <a href="#" className="contact-link">
+                            <a href="https://www.linkedin.com/in/jeffersonsnogueira" className="contact-link" target="_blank" rel="noopener noreferrer">
                                 <Linkedin size={24} />
-                                <span>linkedin.com/in/JsnNb</span>
+                                <span>linkedin.com/in/jeffersonsnogueira</span>
                             </a>
                         </div>
                     </motion.div>
@@ -75,7 +78,7 @@ const Contact = () => {
                             <input
                                 type="text"
                                 name="name"
-                                placeholder="Name"
+                                placeholder={t('contact.form_name')}
                                 value={formData.name}
                                 onChange={handleChange}
                                 required
@@ -85,7 +88,7 @@ const Contact = () => {
                             <input
                                 type="email"
                                 name="email"
-                                placeholder="Email"
+                                placeholder={t('contact.form_email')}
                                 value={formData.email}
                                 onChange={handleChange}
                                 required
@@ -94,7 +97,7 @@ const Contact = () => {
                         <div className="form-group">
                             <textarea
                                 name="message"
-                                placeholder="Message"
+                                placeholder={t('contact.form_message')}
                                 value={formData.message}
                                 onChange={handleChange}
                                 required
@@ -102,7 +105,7 @@ const Contact = () => {
                             ></textarea>
                         </div>
                         <button type="submit" className="submit-btn">
-                            Send Message <Send size={18} />
+                            {t('contact.form_send')} <Send size={18} />
                         </button>
                     </motion.form>
                 </div>

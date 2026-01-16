@@ -1,8 +1,11 @@
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ArrowRight, Code, Brain, Zap } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
+    const { t } = useTranslation();
+
     return (
         <section id="home" className="hero">
             <div className="hero-background">
@@ -23,7 +26,7 @@ const Hero = () => {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.2, duration: 0.8 }}
                     >
-                        Olá, eu sou <span className="highlight">Jefferson</span>
+                        {t('hero.greeting')} <span className="highlight">Jefferson</span>
                     </motion.h2>
 
                     <motion.h1
@@ -32,7 +35,7 @@ const Hero = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.4, duration: 0.8 }}
                     >
-                        Architecting the Future <br /> with <span className="text-gradient">Intelligence</span>
+                        {t('hero.headline_1')} <br /> {t('hero.headline_2')} <span className="text-gradient">{t('hero.headline_3')}</span>
                     </motion.h1>
 
                     <motion.p
@@ -41,8 +44,7 @@ const Hero = () => {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.6, duration: 0.8 }}
                     >
-                        Bridging the gap between data, algorithms, and reality.
-                        Focused on Artificial Intelligence, Machine Learning, and Quantum Computing.
+                        {t('hero.description')}
                     </motion.p>
 
                     <motion.div
@@ -52,10 +54,10 @@ const Hero = () => {
                         transition={{ delay: 0.8, duration: 0.8 }}
                     >
                         <a href="#projects" className="btn btn-primary">
-                            View Projects <ArrowRight size={18} />
+                            {t('hero.cta_projects')} <ArrowRight size={18} />
                         </a>
                         <a href="#contact" className="btn btn-outline">
-                            Contact Me
+                            {t('hero.cta_contact')}
                         </a>
                     </motion.div>
 
@@ -67,17 +69,17 @@ const Hero = () => {
                     >
                         <div className="stat-item">
                             <Brain className="stat-icon" />
-                            <span>AI & ML</span>
+                            <span>{t('hero.stat_ai')}</span>
                         </div>
                         <div className="stat-divider"></div>
                         <div className="stat-item">
                             <Code className="stat-icon" />
-                            <span>Data Science</span>
+                            <span>{t('hero.stat_data')}</span>
                         </div>
                         <div className="stat-divider"></div>
                         <div className="stat-item">
                             <Zap className="stat-icon" />
-                            <span>Quantum</span>
+                            <span>{t('hero.stat_quantum')}</span>
                         </div>
                     </motion.div>
                 </motion.div>

@@ -1,0 +1,87 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "vision": "Vision",
+        "contact": "Contact"
+    },
+    "hero": {
+        "greeting": "Hello, I am",
+        "headline_1": "Architecting the Future",
+        "headline_2": "with",
+        "headline_3": "Intelligence",
+        "description": "Bridging the gap between data, algorithms, and reality. Focused on Artificial Intelligence, Machine Learning, and Quantum Computing.",
+        "cta_projects": "View Projects",
+        "cta_contact": "Contact Me",
+        "stat_ai": "AI & ML",
+        "stat_data": "Data Science",
+        "stat_quantum": "Quantum"
+    },
+    "about": {
+        "title": "About Me",
+        "p1": "I am a Computer Science student (5th semester) focused on Artificial Intelligence, Machine Learning and Data Science. I am currently building practical projects involving statistical modeling, neural networks, and data pipelines to solve real-world problems and develop a solid technical portfolio.",
+        "p2": "My motivation comes from the intersection of scientific curiosity and engineering: I enjoy understanding how systems work, modeling problems with precision, and transforming ideas into software that operates in reality.",
+        "p3": "I am currently seeking opportunities — internships, research, projects or collaborations — that allow me to apply AI/ML to real-world scenarios while progressing toward a professional path as a Machine Learning Engineer / Data Scientist.",
+        "tag_innovation": "Innovation",
+        "tag_problem_solving": "Problem Solving",
+        "tag_learning": "Continuous Learning",
+        "tag_future": "Future Tech"
+    },
+    "interests": {
+        "title": "Areas of Interest",
+        "ai_title": "Artificial Intelligence",
+        "ai_desc": "Creating intelligent systems that adapt, learn, and evolve to solve real-world challenges.",
+        "data_title": "Data Science",
+        "data_desc": "Extracting meaningful insights from complex datasets to drive strategic decision making.",
+        "ml_title": "Machine Learning",
+        "ml_desc": "Building robust models and algorithms that uncover patterns often invisible to the human eye.",
+        "quantum_title": "Quantum Computing",
+        "quantum_desc": "Exploring the future of computation with qubits and superposition for exponential power."
+    },
+    "projects": {
+        "title": "Featured Projects",
+        "cat_all": "All",
+        "cat_ai": "AI",
+        "cat_ml": "ML",
+        "cat_data": "Data",
+        "cat_quantum": "Quantum",
+        "p1_title": "Quantum Key Simulator",
+        "p1_desc": "A visual simulator for BB84 quantum key distribution protocol showing qubit polarization states.",
+        "p2_title": "Neural Style Transfer API",
+        "p2_desc": "REST API that applies artistic styles to images using deep convolutional neural networks.",
+        "p3_title": "Predictive Market Analytics",
+        "p3_desc": "Time-series forecasting platform for financial markets using LSTM networks.",
+        "p4_title": "Autonomous Drone Nav",
+        "p4_desc": "Reinforcement learning environment for training drones to navigate complex obstacle courses.",
+        "p5_title": "Customer Churn AI",
+        "p5_desc": "End-to-end machine learning pipeline for predicting user churn with 94% accuracy.",
+        "p6_title": "Grover Search Visualizer",
+        "p6_desc": "Interactive educational tool demonstrating Grover's search algorithm on a quantum computer."
+    },
+    "vision": {
+        "title": "Vision of the Future",
+        "conv_title": "The Convergence",
+        "conv_desc": "I believe the next leap in human evolution will come from the convergence of Quantum Computing and Artificial Intelligence. Quantum algorithms will unlock the computational power needed to train the next generation of AI models.",
+        "ethics_title": "Ethical Innovation",
+        "ethics_desc": "As we build more powerful systems, our responsibility grows. My goal is to develop technologies that are not only efficient but also transparent, fair, and beneficial to humanity as a whole.",
+        "evo_title": "Continuous Evolution",
+        "evo_desc": "Technology is a river that never stops. I am committed to staying at the bleeding edge, constantly learning and adapting to shape the digital landscape of tomorrow."
+    },
+    "contact": {
+        "title": "Get In Touch",
+        "connect_title": "Let's Connect",
+        "connect_desc": "I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.",
+        "form_name": "Name",
+        "form_email": "Email",
+        "form_message": "Message",
+        "form_send": "Send Message",
+        "alert_success": "Thank you for your message! This is a demo form."
+    },
+    "footer": {
+        "text": "Jefferson Santana Nogueira — AI • Machine Learning • Data Portfolio. Built with React. All rights reserved."
+    },
+    "meta": {
+        "title": "JsnNb | Future Tech Portfolio"
+    }
+}

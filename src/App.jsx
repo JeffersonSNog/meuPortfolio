@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -9,6 +11,13 @@ import Footer from './components/Footer';
 import './App.css';
 
 function App() {
+  const { t } = useTranslation();
+
+  // Update document title when language changes
+  useEffect(() => {
+    document.title = t('meta.title');
+  }, [t]);
+
   return (
     <div className="app-container">
       <Navbar />

@@ -1,35 +1,38 @@
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Brain, Database, Cpu, Atom } from 'lucide-react';
 import './Interests.css';
 
-const interests = [
-    {
-        icon: <Brain size={40} />,
-        title: 'Artificial Intelligence',
-        desc: 'Creating intelligent systems that adapt, learn, and evolve to solve real-world challenges.',
-        color: 'var(--primary)'
-    },
-    {
-        icon: <Database size={40} />,
-        title: 'Data Science',
-        desc: 'Extracting meaningful insights from complex datasets to drive strategic decision making.',
-        color: 'var(--secondary)'
-    },
-    {
-        icon: <Cpu size={40} />,
-        title: 'Machine Learning',
-        desc: 'Building robust models and algorithms that uncover patterns often invisible to the human eye.',
-        color: 'var(--accent-green)'
-    },
-    {
-        icon: <Atom size={40} />,
-        title: 'Quantum Computing',
-        desc: 'Exploring the future of computation with qubits and superposition for exponential power.',
-        color: '#ff0055'
-    }
-];
-
 const Interests = () => {
+    const { t } = useTranslation();
+
+    const interests = [
+        {
+            icon: <Brain size={40} />,
+            title: t('interests.ai_title'),
+            desc: t('interests.ai_desc'),
+            color: 'var(--primary)'
+        },
+        {
+            icon: <Database size={40} />,
+            title: t('interests.data_title'),
+            desc: t('interests.data_desc'),
+            color: 'var(--secondary)'
+        },
+        {
+            icon: <Cpu size={40} />,
+            title: t('interests.ml_title'),
+            desc: t('interests.ml_desc'),
+            color: 'var(--accent-green)'
+        },
+        {
+            icon: <Atom size={40} />,
+            title: t('interests.quantum_title'),
+            desc: t('interests.quantum_desc'),
+            color: '#ff0055'
+        }
+    ];
+
     return (
         <section id="interests" className="interests-section">
             <div className="interests-container">
@@ -40,7 +43,7 @@ const Interests = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <h2 className="section-title">Areas of Interest</h2>
+                    <h2 className="section-title">{t('interests.title')}</h2>
                     <div className="section-line"></div>
                 </motion.div>
 

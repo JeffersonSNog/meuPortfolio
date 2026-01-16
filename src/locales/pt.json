@@ -1,0 +1,87 @@
+{
+    "navbar": {
+        "home": "Início",
+        "about": "Sobre",
+        "projects": "Projetos",
+        "vision": "Visão",
+        "contact": "Contato"
+    },
+    "hero": {
+        "greeting": "Olá, eu sou",
+        "headline_1": "Arquitetando o Futuro",
+        "headline_2": "com",
+        "headline_3": "Inteligência",
+        "description": "Unindo dados, algoritmos e realidade. Focado em Inteligência Artificial, Aprendizado de Máquina e Computação Quântica.",
+        "cta_projects": "Ver Projetos",
+        "cta_contact": "Entre em Contato",
+        "stat_ai": "IA & ML",
+        "stat_data": "Ciência de Dados",
+        "stat_quantum": "Quântica"
+    },
+    "about": {
+        "title": "Sobre Mim",
+        "p1": "Sou estudante de Ciência da Computação (5º semestre) com foco em Inteligência Artificial, Machine Learning e Ciência de Dados. Atualmente estou desenvolvendo projetos práticos que combinam modelagem estatística, redes neurais e pipelines de dados para resolver problemas reais e construir um portfólio técnico sólido.",
+        "p2": "Minha motivação vem da junção entre curiosidade científica e engenharia: gosto de entender como as coisas funcionam, modelar problemas com precisão e transformar ideias em sistemas que funcionam na prática.",
+        "p3": "No momento, busco oportunidades — estágio, projetos, pesquisa ou colaboração — que me permitam aplicar IA/ML em cenários reais enquanto sigo evoluindo para atuar profissionalmente como Machine Learning Engineer / Data Scientist nos próximos anos.",
+        "tag_innovation": "Inovação",
+        "tag_problem_solving": "Resolução de Problemas",
+        "tag_learning": "Aprendizado Contínuo",
+        "tag_future": "Tecnologia Futura"
+    },
+    "interests": {
+        "title": "Áreas de Interesse",
+        "ai_title": "Inteligência Artificial",
+        "ai_desc": "Criando sistemas inteligentes que se adaptam, aprendem e evoluem para resolver desafios do mundo real.",
+        "data_title": "Ciência de Dados",
+        "data_desc": "Extraindo insights significativos de conjuntos de dados complexos para impulsionar a tomada de decisões estratégicas.",
+        "ml_title": "Aprendizado de Máquina",
+        "ml_desc": "Construindo modelos robustos e algoritmos que descobrem padrões muitas vezes invisíveis ao olho humano.",
+        "quantum_title": "Computação Quântica",
+        "quantum_desc": "Explorando o futuro da computação com qubits e superposição para poder exponencial."
+    },
+    "projects": {
+        "title": "Projetos em Destaque",
+        "cat_all": "Todos",
+        "cat_ai": "IA",
+        "cat_ml": "ML",
+        "cat_data": "Dados",
+        "cat_quantum": "Quântica",
+        "p1_title": "Simulador de Chave Quântica",
+        "p1_desc": "Um simulador visual para o protocolo de distribuição de chave quântica BB84 mostrando estados de polarização de qubits.",
+        "p2_title": "API de Transferência de Estilo Neural",
+        "p2_desc": "API REST que aplica estilos artísticos a imagens usando redes neurais convolucionais profundas.",
+        "p3_title": "Análise Preditiva de Mercado",
+        "p3_desc": "Plataforma de previsão de séries temporais para mercados financeiros usando redes LSTM.",
+        "p4_title": "Navegação de Drone Autônomo",
+        "p4_desc": "Ambiente de aprendizado por reforço para treinar drones a navegar em cursos de obstáculos complexos.",
+        "p5_title": "IA de Churn de Clientes",
+        "p5_desc": "Pipeline de aprendizado de máquina de ponta a ponta para prever a rotatividade de usuários com 94% de precisão.",
+        "p6_title": "Visualizador de Busca de Grover",
+        "p6_desc": "Ferramenta educacional interativa demonstrando o algoritmo de busca de Grover em um computador quântico."
+    },
+    "vision": {
+        "title": "Visão do Futuro",
+        "conv_title": "A Convergência",
+        "conv_desc": "Acredito que o próximo salto na evolução humana virá da convergência da Computação Quântica e Inteligência Artificial. Algoritmos quânticos desbloquearão o poder computacional necessário para treinar a próxima geração de modelos de IA.",
+        "ethics_title": "Inovação Ética",
+        "ethics_desc": "À medida que construímos sistemas mais poderosos, nossa responsabilidade cresce. Meu objetivo é desenvolver tecnologias que não sejam apenas eficientes, mas também transparentes, justas e benéficas para a humanidade como um todo.",
+        "evo_title": "Evolução Contínua",
+        "evo_desc": "A tecnologia é um rio que nunca para. Estou comprometido em permanecer na vanguarda, constantemente aprendendo e me adaptando para moldar a paisagem digital de amanhã."
+    },
+    "contact": {
+        "title": "Entre em Contato",
+        "connect_title": "Vamos Conectar",
+        "connect_desc": "Estou sempre aberto a discutir novos projetos, ideias criativas ou oportunidades para fazer parte de suas visões.",
+        "form_name": "Nome",
+        "form_email": "Email",
+        "form_message": "Mensagem",
+        "form_send": "Enviar Mensagem",
+        "alert_success": "Obrigado pela sua mensagem! Este é um formulário de demonstração."
+    },
+    "footer": {
+        "text": "Jefferson Santana Nogueira — Portfólio de IA • Machine Learning • Dados. Construído com React. Todos os direitos reservados."
+    },
+    "meta": {
+        "title": "JsnNb | Portfólio de Tecnologia Futura"
+    }
+}

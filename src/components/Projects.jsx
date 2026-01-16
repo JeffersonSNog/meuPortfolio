@@ -1,63 +1,80 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Github, ExternalLink, Play } from 'lucide-react';
 import './Projects.css';
 
-const projectsData = [
-    {
-        id: 1,
-        title: 'Quantum Key Simulator',
-        category: 'Quantum',
-        description: 'A visual simulator for BB84 quantum key distribution protocol showing qubit polarization states.',
-        tech: ['Python', 'Qiskit', 'React', 'WebSockets'],
-        links: { github: '#', demo: '#' }
-    },
-    {
-        id: 2,
-        title: 'Neural Style Transfer API',
-        category: 'AI',
-        description: 'REST API that applies artistic styles to images using deep convolutional neural networks.',
-        tech: ['TensorFlow', 'FastAPI', 'Docker', 'AWS'],
-        links: { github: '#', demo: '#' }
-    },
-    {
-        id: 3,
-        title: 'Predictive Market Analytics',
-        category: 'Data',
-        description: 'Time-series forecasting platform for financial markets using LSTM networks.',
-        tech: ['Pandas', 'PyTorch', 'D3.js', 'Flask'],
-        links: { github: '#', demo: '#' }
-    },
-    {
-        id: 4,
-        title: 'Autonomous Drone Nav',
-        category: 'AI',
-        description: 'Reinforcement learning environment for training drones to navigate complex obstacle courses.',
-        tech: ['Unity', 'C#', 'ML-Agents', 'Python'],
-        links: { github: '#', video: '#' }
-    },
-    {
-        id: 5,
-        title: 'Customer Churn AI',
-        category: 'ML',
-        description: 'End-to-end machine learning pipeline for predicting user churn with 94% accuracy.',
-        tech: ['Scikit-learn', 'XGBoost', 'Streamlit'],
-        links: { github: '#', demo: '#' }
-    },
-    {
-        id: 6,
-        title: 'Grover Search Visualizer',
-        category: 'Quantum',
-        description: 'Interactive educational tool demonstrating Grover\'s search algorithm on a quantum computer.',
-        tech: ['React', 'D3.js', 'Quantumjs'],
-        links: { github: '#', demo: '#' }
-    }
-];
-
-const categories = ['All', 'AI', 'ML', 'Data', 'Quantum'];
-
 const Projects = () => {
+    const { t } = useTranslation();
     const [filter, setFilter] = useState('All');
+
+    const projectsData = [
+        {
+            id: 1,
+            title: t('projects.p1_title'),
+            category: 'Quantum',
+            description: t('projects.p1_desc'),
+            tech: ['Python', 'Qiskit', 'React', 'WebSockets'],
+            links: { github: 'https://github.com/JeffersonSNog', demo: '#' }
+        },
+        {
+            id: 2,
+            title: t('projects.p2_title'),
+            category: 'AI',
+            description: t('projects.p2_desc'),
+            tech: ['TensorFlow', 'FastAPI', 'Docker', 'AWS'],
+            links: { github: 'https://github.com/JeffersonSNog', demo: '#' }
+        },
+        {
+            id: 3,
+            title: t('projects.p3_title'),
+            category: 'Data',
+            description: t('projects.p3_desc'),
+            tech: ['Pandas', 'PyTorch', 'D3.js', 'Flask'],
+            links: { github: 'https://github.com/JeffersonSNog', demo: '#' }
+        },
+        {
+            id: 4,
+            title: t('projects.p4_title'),
+            category: 'AI',
+            description: t('projects.p4_desc'),
+            tech: ['Unity', 'C#', 'ML-Agents', 'Python'],
+            links: { github: 'https://github.com/JeffersonSNog', video: '#' }
+        },
+        {
+            id: 5,
+            title: t('projects.p5_title'),
+            category: 'ML',
+            description: t('projects.p5_desc'),
+            tech: ['Scikit-learn', 'XGBoost', 'Streamlit'],
+            links: { github: 'https://github.com/JeffersonSNog', demo: '#' }
+        },
+        {
+            id: 6,
+            title: t('projects.p6_title'),
+            category: 'Quantum',
+            description: t('projects.p6_desc'),
+            tech: ['React', 'D3.js', 'Quantumjs'],
+            links: { github: 'https://github.com/JeffersonSNog', demo: '#' }
+        }
+    ];
+
+    const categories = [t('projects.cat_all'), t('projects.cat_ai'), t('projects.cat_ml'), t('projects.cat_data'), t('projects.cat_quantum')];
+
+    // Map 'All' back to English 'All' for filtering logic if needed, or better: 
+    // Simplify filtering: Use keys or fixed codes for categories in data, and translate labels for UI.
+    // For now, to minimize refactor, I will keep data categories as English keys (Quantum, AI, etc) and map UI labels.
+    // But wait, the filter state is comparing with project.category. 
+    // So categories array should have objects { label: t(...), value: 'AI' } or similar.
+    // Let's adjust:
+
+    const filterCategories = [
+        { label: t('projects.cat_all'), value: 'All' },
+        { label: t('projects.cat_ai'), value: 'AI' },
+        { label: t('projects.cat_ml'), value: 'ML' },
+        { label: t('projects.cat_data'), value: 'Data' },
+        { label: t('projects.cat_quantum'), value: 'Quantum' }
+    ];
 
     const filteredProjects = filter === 'All'
         ? projectsData
@@ -73,18 +90,18 @@ const Projects = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <h2 className="section-title">Featured Projects</h2>
+                    <h2 className="section-title">{t('projects.title')}</h2>
                     <div className="section-line"></div>
                 </motion.div>
 
                 <div className="filter-container">
-                    {categories.map(cat => (
+                    {filterCategories.map(cat => (
                         <button
-                            key={cat}
-                            className={`filter-btn ${filter === cat ? 'active' : ''}`}
-                            onClick={() => setFilter(cat)}
+                            key={cat.value}
+                            className={`filter-btn ${filter === cat.value ? 'active' : ''}`}
+                            onClick={() => setFilter(cat.value)}
                         >
-                            {cat}
+                            {cat.label}
                         </button>
                     ))}
                 </div>
@@ -102,7 +119,7 @@ const Projects = () => {
                                 className="project-card"
                             >
                                 <div className="project-content">
-                                    <div className="project-category">{project.category}</div>
+                                    <div className="project-category">{t(`projects.cat_${project.category.toLowerCase()}`)}</div>
                                     <h3 className="project-title">{project.title}</h3>
                                     <p className="project-desc">{project.description}</p>
 
