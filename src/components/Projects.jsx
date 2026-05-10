@@ -11,51 +11,11 @@ const Projects = () => {
     const projectsData = [
         {
             id: 1,
-            title: t('projects.p1_title'),
-            category: 'Quantum',
-            description: t('projects.p1_desc'),
-            tech: ['Python', 'Qiskit', 'React', 'WebSockets'],
-            links: { github: 'https://github.com/JeffersonSNog', demo: '#' }
-        },
-        {
-            id: 2,
-            title: t('projects.p2_title'),
-            category: 'AI',
-            description: t('projects.p2_desc'),
-            tech: ['TensorFlow', 'FastAPI', 'Docker', 'AWS'],
-            links: { github: 'https://github.com/JeffersonSNog', demo: '#' }
-        },
-        {
-            id: 3,
-            title: t('projects.p3_title'),
-            category: 'Data',
-            description: t('projects.p3_desc'),
-            tech: ['Pandas', 'PyTorch', 'D3.js', 'Flask'],
-            links: { github: 'https://github.com/JeffersonSNog', demo: '#' }
-        },
-        {
-            id: 4,
-            title: t('projects.p4_title'),
-            category: 'AI',
-            description: t('projects.p4_desc'),
-            tech: ['Unity', 'C#', 'ML-Agents', 'Python'],
-            links: { github: 'https://github.com/JeffersonSNog', video: '#' }
-        },
-        {
-            id: 5,
-            title: t('projects.p5_title'),
+            title: 'PredictOps Pipeline',
             category: 'ML',
-            description: t('projects.p5_desc'),
-            tech: ['Scikit-learn', 'XGBoost', 'Streamlit'],
-            links: { github: 'https://github.com/JeffersonSNog', demo: '#' }
-        },
-        {
-            id: 6,
-            title: t('projects.p6_title'),
-            category: 'Quantum',
-            description: t('projects.p6_desc'),
-            tech: ['React', 'D3.js', 'Quantumjs'],
-            links: { github: 'https://github.com/JeffersonSNog', demo: '#' }
+            description: 'Pipeline MLOps de ponta a ponta para detecção de anomalias em equipamentos industriais com monitoramento de data drift automatizado.',
+            tech: ['FastAPI', 'MLflow', 'Docker', 'Scikit-learn', 'Pandas'],
+            links: { github: 'https://github.com/JeffersonSNog/meuPortfolio' }
         }
     ];
 
