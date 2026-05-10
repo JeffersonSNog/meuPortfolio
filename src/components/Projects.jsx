@@ -11,11 +11,11 @@ const Projects = () => {
     const projectsData = [
         {
             id: 1,
-            title: 'PredictOps Pipeline',
+            title: t('projects.p1_title'),
             category: 'ML',
-            description: 'Pipeline MLOps de ponta a ponta para detecção de anomalias em equipamentos industriais com monitoramento de data drift automatizado.',
+            description: t('projects.p1_desc'),
             tech: ['FastAPI', 'MLflow', 'Docker', 'Scikit-learn', 'Pandas'],
-            links: { github: 'https://github.com/JeffersonSNog/meuPortfolio' }
+            links: { github: 'https://github.com/JeffersonSNog/predictops-pipeline' }
         }
     ];
 

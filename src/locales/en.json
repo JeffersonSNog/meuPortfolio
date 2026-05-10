@@ -46,18 +46,8 @@
         "cat_ml": "ML",
         "cat_data": "Data",
         "cat_quantum": "Quantum",
-        "p1_title": "Quantum Key Simulator",
-        "p1_desc": "A visual simulator for BB84 quantum key distribution protocol showing qubit polarization states.",
-        "p2_title": "Neural Style Transfer API",
-        "p2_desc": "REST API that applies artistic styles to images using deep convolutional neural networks.",
-        "p3_title": "Predictive Market Analytics",
-        "p3_desc": "Time-series forecasting platform for financial markets using LSTM networks.",
-        "p4_title": "Autonomous Drone Nav",
-        "p4_desc": "Reinforcement learning environment for training drones to navigate complex obstacle courses.",
-        "p5_title": "Customer Churn AI",
-        "p5_desc": "End-to-end machine learning pipeline for predicting user churn with 94% accuracy.",
-        "p6_title": "Grover Search Visualizer",
-        "p6_desc": "Interactive educational tool demonstrating Grover's search algorithm on a quantum computer."
+        "p1_title": "PredictOps Pipeline",
+        "p1_desc": "End-to-end MLOps pipeline for anomaly detection in industrial equipment with automated data drift monitoring."
     },
     "vision": {
         "title": "Vision of the Future",

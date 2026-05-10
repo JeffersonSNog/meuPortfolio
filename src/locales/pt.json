@@ -46,18 +46,8 @@
         "cat_ml": "ML",
         "cat_data": "Dados",
         "cat_quantum": "Quântica",
-        "p1_title": "Simulador de Chave Quântica",
-        "p1_desc": "Um simulador visual para o protocolo de distribuição de chave quântica BB84 mostrando estados de polarização de qubits.",
-        "p2_title": "API de Transferência de Estilo Neural",
-        "p2_desc": "API REST que aplica estilos artísticos a imagens usando redes neurais convolucionais profundas.",
-        "p3_title": "Análise Preditiva de Mercado",
-        "p3_desc": "Plataforma de previsão de séries temporais para mercados financeiros usando redes LSTM.",
-        "p4_title": "Navegação de Drone Autônomo",
-        "p4_desc": "Ambiente de aprendizado por reforço para treinar drones a navegar em cursos de obstáculos complexos.",
-        "p5_title": "IA de Churn de Clientes",
-        "p5_desc": "Pipeline de aprendizado de máquina de ponta a ponta para prever a rotatividade de usuários com 94% de precisão.",
-        "p6_title": "Visualizador de Busca de Grover",
-        "p6_desc": "Ferramenta educacional interativa demonstrando o algoritmo de busca de Grover em um computador quântico."
+        "p1_title": "PredictOps Pipeline",
+        "p1_desc": "Pipeline MLOps de ponta a ponta para detecção de anomalias em equipamentos industriais com monitoramento de data drift automatizado."
     },
     "vision": {
         "title": "Visão do Futuro",
